@@ -5,13 +5,13 @@ text-transform:capitalize;
 background:transparent;
 font-size:1.4rem;
 border:0.05rem solid lightblue;
-border-color:${props => props.cart?"yellow":"lightblue"};
+border-color:${props => props.cart ? "yellow" : "lightblue"};
 cursor:pointer;
 border-radius:5px;
 margin:5px;
 transition:all 0.5s ease-in-out;
 &:hover{
-    bacckground:blue;
+    background:blue;
     color:white;
 }
 `;

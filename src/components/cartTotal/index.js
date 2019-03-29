@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PayaPalButton from '../cart/PayaPalButton';
 
-export default function CartTotal({ value,history }) {
+export default function CartTotal({ value, history }) {
 
- const { cartSubTotal,cartTax,cartTotal,clearCart } = value;
+    const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
 
     return (
         <div className="container">
@@ -28,7 +28,7 @@ export default function CartTotal({ value,history }) {
                     <span className="text-title">total:</span>
                     <strong>$ {cartTotal}</strong>
                 </h5>
-                <PayaPalButton total={cartTotal}  clearCart={clearCart} history={history} />
+                <PayaPalButton total={cartTotal} clearCart={clearCart} history={history} />
             </div>
 
         </div>
